@@ -1,0 +1,17 @@
+ul {
+  font-size: 2rem;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  white-space: break-spaces;
+
+  &:not(:last-of-type) {
+    &:after {
+      content: ',';
+      margin-left: -5px;
+    }
+  }
+
+}

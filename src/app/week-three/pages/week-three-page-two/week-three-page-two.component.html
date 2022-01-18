@@ -1,0 +1,21 @@
+<h2>
+  Week 3, Page 2
+</h2>
+
+<section>
+  <p>
+    {{ 'Counter: ' + getCounter() }}
+  </p>
+  <div class='singleton-actions'>
+    <button type='button' (click)='incrementCounter()'>
+      Increment
+    </button>
+    <button type='button' (click)='resetCounter()'>
+      Reset
+    </button>
+  </div>
+</section>
+
+<nav>
+  <a routerLink='/week-three'>Go to Week 3</a>
+</nav>

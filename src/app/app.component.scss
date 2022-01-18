@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  margin: auto;
+  max-width: 70%;
+}
+
+main {
+  padding-left: 4rem;
+  width: 100%;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  border-radius: 8px;
+  flex: 0 0 250px;
+  padding: 0 2rem 2rem;
+
+  ul {
+    list-style-type: none;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+}
