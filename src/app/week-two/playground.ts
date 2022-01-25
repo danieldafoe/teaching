@@ -3,7 +3,7 @@
 (function() {
   // Get Pokemon data
   // Display data
-  fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+  fetch('https://dog.ceo/api/breeds/image/random')
     .then((response) => response.json())
     .then((data) => renderPokemon(data['results']));
 })();
