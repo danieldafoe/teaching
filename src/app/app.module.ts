@@ -24,7 +24,7 @@ import { PresentationalComponent1 } from './week-three/lab-one/presentational/pr
     WeekThreePageTwoComponent,
     LabOneComponent,
     ContainerComponent1,
-    PresentationalComponent1
+    PresentationalComponent1,
   ],
   imports: [
     AppRoutingModule,

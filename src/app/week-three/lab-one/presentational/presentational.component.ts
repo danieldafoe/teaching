@@ -6,7 +6,7 @@ import { Component,Input,OnInit } from '@angular/core';
     styleUrls: ['./presentational.component.scss']
   })
 export class PresentationalComponent1 implements OnInit {
-  @Input() data!: any[];
+  @Input() data!: any;
 
   ngOnInit(): void {
     console.log(this.data);
