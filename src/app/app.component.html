@@ -10,6 +10,11 @@
           Latest
         </a>
       </li>
+      <li>
+        <a routerLink="/lab-one">
+          Lab 1
+        </a>
+      </li>
       <li *ngFor='let week of weeks'>
         <a routerLink='/{{ week.url }}'>
           {{ week.name }}
