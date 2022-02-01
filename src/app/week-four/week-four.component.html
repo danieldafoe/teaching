@@ -1,0 +1,46 @@
+<h2>
+  Week 4
+</h2>
+
+<p>
+  In this demonstration, there are 3 components and 1 service:
+</p>
+<ul>
+  <li>WeekFourComponent</li>
+  <li>AccountBalanceComponent</li>
+  <li>AccountDetailsComponent</li>
+  <li>TransactionService</li>
+</ul>
+<p>
+  WeekFourComponent displays the two child components, AccountBalanceComponent and AccountDetailsComponent. It also displays a button.
+</p>
+<p>
+  The TransactionService creates an <strong>Observable</strong> that both the AccountBalanceComponent and AccountDetailsComponent <strong>subscribe to</strong>. They are the <strong>Observers</strong>.
+</p>
+<p>
+  When the button in WeekFourComponent is activated, the WeekFourComponent calls the TransactionService to tell it a new purchase has been made.
+</p>
+<p>
+  When the TransactionService receives that message from WeekFourComponent, the TransactionService will push out a message to all of its <strong>Observers</strong>.
+</p>
+<p>
+  Since AccountBalanceComponent and AccountDetailsComponent are both Observers, they will receive this update <strong>from the Observable</strong> that they subscribed to.
+</p>
+<p>
+  Once they have received an update from the Observable that there is a new value, AccountBalanceComponent and AccountDetailsComponent can handle that information however they want.
+</p>
+
+<hr/>
+
+<h3>
+  Example
+</h3>
+
+<button (click)='makePurchase()'>
+  Make a Purchase
+</button>
+
+<div class="account-details">
+  <account-balance></account-balance>
+  <account-details></account-details>
+</div>

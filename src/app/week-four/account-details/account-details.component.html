@@ -1,0 +1,25 @@
+<table>
+  <caption>
+    <h3>
+      Transactions
+    </h3>
+  </caption>
+  <thead>
+    <th scope='col'>
+      Date
+    </th>
+    <th scope='col'>
+      Amount
+    </th>
+  </thead>
+  <tbody>
+    <tr *ngFor='let amount of transactions'>
+      <td>
+        2022/02/01
+      </td>
+      <td>
+        {{ amount | currency }}
+      </td>
+    </tr>
+  </tbody>
+</table>

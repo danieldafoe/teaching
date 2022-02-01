@@ -1,0 +1,12 @@
+.account-details {
+  display: flex;
+
+  :first-child {
+    flex: 0 0 auto;
+    margin-right: 5rem;
+  }
+
+  :last-child {
+    flex: 1 0 70%;
+  }
+}

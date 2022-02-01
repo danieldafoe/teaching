@@ -1,0 +1,13 @@
+table {
+  border: 1px solid var(--table-brdr);
+  border-collapse: collapse;
+  text-align: left;
+
+  caption {
+    text-align: left;
+  }
+
+  th, td {
+    padding: 1rem 4rem 1rem;
+  }
+}

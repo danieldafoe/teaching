@@ -5,8 +5,10 @@
   --button-clr: #fff;
   --code-bg: #f5f6f8;
   --h1-brdr: #222;
+  --hr-brdr: #222;
   --link-clr: #006ac3;
   --nav-bg: #f5f6f8;
+  --table-brdr: #222;
 }
 
 * {
@@ -77,4 +79,10 @@ h1 {
     font-size: 160%;
     padding-top: .85rem;
   }
+}
+
+hr {
+  background-color: var(--hr-brdr);
+  border: 0;
+  height: 1px;
 }

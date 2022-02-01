@@ -13,6 +13,7 @@ interface WeeklyContent {
 export class AppComponent {
   weeks: WeeklyContent[]  = [
     { name: 'Week 2', url: 'week-two' },
-    { name: 'Week 3', url: 'week-three' }
+    { name: 'Week 3', url: 'week-three' },
+    { name: 'Week 4', url: 'week-four' }
   ];
 }
