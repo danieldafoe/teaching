@@ -23,6 +23,8 @@ export class AccountBalanceComponent implements OnInit {
   // whatever amount gets emitted by the Observable
   ngOnInit(): void {
     this.transactionService.purchases$.subscribe((value) => {
+      // This is a shorthand way of saying:
+      // this.balance = this.balance - value;
       this.balance-= value;
     });
   }
