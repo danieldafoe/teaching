@@ -14,6 +14,7 @@ import { LabOneComponent } from './week-three/lab-one/lab-one.component';
 import { WeekFourComponent } from './week-four/week-four.component';
 import { AccountBalanceComponent } from './week-four/account-balance/account-balance.component';
 import { AccountDetailsComponent } from './week-four/account-details/account-details.component';
+import { WeekFiveComponent } from './week-five/week-five.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AccountDetailsComponent } from './week-four/account-details/account-det
     WeekThreePageTwoComponent,
     WeekFourComponent,
     AccountBalanceComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
+    WeekFiveComponent
   ],
   imports: [
     AppRoutingModule,
