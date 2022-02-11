@@ -2,6 +2,7 @@
   --body-brdr: #006ac3;
   --body-clr: #222;
   --button-bg: #006ac3;
+  --button-hover-bg: #0051a5;
   --button-clr: #fff;
   --code-bg: #f5f6f8;
   --h1-brdr: #222;
@@ -51,9 +52,11 @@ button {
   border-radius: 8px;
   color: var(--button-clr);
   font-size: 1.8rem;
-  padding: 1.2rem 1.6rem;
+  min-width: 150px;
+  padding: 1.8rem 2.2rem;
 
   &:hover {
+    background-color: var(--button-hover-bg);
     cursor: pointer;
   }
 }
@@ -85,4 +88,9 @@ hr {
   background-color: var(--hr-brdr);
   border: 0;
   height: 1px;
+}
+
+input {
+  font-size: 2rem;
+  padding: 1.2rem 1.6rem
 }
