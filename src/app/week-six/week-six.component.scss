@@ -1,0 +1,7 @@
+button {
+  display: block;
+
+  &:first-of-type {
+    margin-bottom: 1rem;
+  }
+}

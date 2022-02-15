@@ -1,0 +1,40 @@
+<h2>
+  Week 6
+</h2>
+
+<h3>
+  Account Details
+</h3>
+
+<!-- 
+  Access our WeekSixComponent.account variable
+  and call its various methods in order to
+  display the relevant data. These will update
+  whenever the WeekSixComponent.account variable value
+  gets updated.
+ -->
+<p>
+  Cost: {{ account.cost() | currency }}
+</p>
+<p>
+  Streams remaining: {{ account.streamsRemaining() }}
+</p>
+<p>
+  Friend invites: {{ account.invites() }}
+</p>
+
+<!-- 
+  When clicked, calls the addElitePackage() method in our
+  week-six.component.ts file
+ -->
+<button type="button" (click)="addElitePackage()">
+  Add Elite Package
+</button>
+
+<!-- 
+  When clicked, calls the addPremiumPackage() method in our
+  week-six.component.ts file
+ -->
+<button type="button" (click)="addPremiumPackage()">
+  Add Premium Package
+</button>
