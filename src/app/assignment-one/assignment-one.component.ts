@@ -38,7 +38,10 @@ export class AssignmentOneComponent {
     this.books$ = this.httpClient.get(
       `${OPEN_LIBRARY_BASE_PATH}search.json?title=${title}`
     ).pipe(
+      // Wait for 3 seconds before executing another search
       throttleTime(3000),
+      // Update the results loading variable 
+      // when book results are returned
       tap(() => this.areResultsLoading = false)
     );
   }
