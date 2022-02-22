@@ -17,15 +17,8 @@ import { AccountDetailsComponent } from './week-four/account-details/account-det
 import { WeekFiveComponent } from './week-five/week-five.component';
 import { AssignmentOneComponent } from './assignment-one/assignment-one.component';
 import { WeekSixComponent } from './week-six/week-six.component';
-import { WeekSevenComponent } from './week-seven/week-seven.component';
-import { LabTwoComponent } from './lab-two/lab-two.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatButtonModule } from '@angular/material/button';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatSliderModule } from '@angular/material/slider';
+import { Userstory2presentationalComponent } from './assignment-one/userstory2presentational/userstory2presentational.component';
+import { Userstory2containerComponent } from './assignment-one/userstory2container/userstory2container.component';
 
 @NgModule({
   declarations: [
@@ -42,19 +35,14 @@ import { MatSliderModule } from '@angular/material/slider';
     WeekFiveComponent,
     AssignmentOneComponent,
     WeekSixComponent,
-    WeekSevenComponent,
-    LabTwoComponent
+    Userstory2presentationalComponent,
+    Userstory2containerComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     CommonModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
