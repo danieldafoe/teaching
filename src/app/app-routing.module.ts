@@ -9,17 +9,21 @@ import { WeekFourComponent } from './week-four/week-four.component';
 import { WeekFiveComponent } from './week-five/week-five.component';
 import { AssignmentOneComponent } from './assignment-one/assignment-one.component';
 import { WeekSixComponent } from './week-six/week-six.component';
+import { WeekSevenComponent } from './week-seven/week-seven.component';
+import { LabTwoComponent } from './lab-two/lab-two.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: WeekSixComponent },
+  { path: '', pathMatch: 'full', component: WeekSevenComponent },
   { path: 'assignment-one', component: AssignmentOneComponent },
   { path: 'lab-one', component: LabOneComponent },
+  { path: 'lab-two', component: LabTwoComponent },
   { path: 'week-two', component: WeekTwoComponent },
   { path: 'week-three', component: WeekThreeComponent },
   { path: 'week-three-page-two', component: WeekThreePageTwoComponent },
   { path: 'week-four', component: WeekFourComponent },
   { path: 'week-five', component: WeekFiveComponent },
   { path: 'week-six', component: WeekSixComponent },
+  { path: 'week-seven', component: WeekSevenComponent },
 ];
 
 @NgModule({

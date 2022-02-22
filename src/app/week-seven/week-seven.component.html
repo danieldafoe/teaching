@@ -1,0 +1,64 @@
+<h2>
+  Week 7
+</h2>
+
+<form>
+  <h3>
+    Account Information
+  </h3>
+
+  <!--
+    https://material.angular.io/components/form-field/overview
+  -->
+  <mat-form-field appearance="fill">
+    <mat-label>
+      Name
+    </mat-label>
+    <!--
+      https://material.angular.io/components/input/overview
+    -->
+    <input matInput>
+  </mat-form-field>
+
+  <!--
+    https://material.angular.io/components/form-field/overview
+  -->
+  <mat-form-field appearance="fill">
+    <mat-label>
+      Best Streaming Service
+    </mat-label>
+    <mat-hint align="start">
+      Which is best?
+    </mat-hint>
+    <!--
+      https://material.angular.io/components/select/overview
+    -->
+    <mat-select>
+      <mat-option value="prime">Amazon Prime</mat-option>
+      <mat-option value="crave">Crave</mat-option>
+      <mat-option value="crunchy">Crunchyroll</mat-option>
+      <mat-option value="disney">Disney+</mat-option>
+      <mat-option value="hulu">Hulu</mat-option>
+      <mat-option value="netflix">Netflix</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!--
+    https://material.angular.io/components/form-field/overview
+  -->
+  <mat-form-field appearance="fill">
+    <mat-label>
+      Favourite TV series?
+    </mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+  <!--
+    https://material.angular.io/components/button/overview
+  -->
+  <button mat-raised-button color="primary" type="button">
+    Create Account
+  </button>
+</form>
+
+
