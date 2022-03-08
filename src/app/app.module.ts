@@ -25,7 +25,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { MatSliderModule } from '@angular/material/slider';
+import { WeekNineComponent } from './week-nine/week-nine.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,8 @@ import { MatSliderModule } from '@angular/material/slider';
     AssignmentOneComponent,
     WeekSixComponent,
     WeekSevenComponent,
-    LabTwoComponent
+    LabTwoComponent,
+    WeekNineComponent
   ],
   imports: [
     AppRoutingModule,
@@ -55,6 +60,11 @@ import { MatSliderModule } from '@angular/material/slider';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    // The forRoot() method accepts an object that gives a name
+    // for the root Store and then the main reducer that will
+    // handle all changes to the Store.
+    StoreModule.forRoot({ desn3037: appReducer }),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]

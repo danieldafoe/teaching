@@ -18,5 +18,6 @@ export class AppComponent {
     { name: 'Week 5', url: 'week-five' },
     { name: 'Week 6', url: 'week-six' },
     { name: 'Week 7', url: 'week-seven' },
+    { name: 'Week 9', url: 'week-nine' },
   ];
 }
