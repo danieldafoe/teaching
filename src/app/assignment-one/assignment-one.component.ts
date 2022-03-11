@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AssignmentOneFacadeService } from './facades/facade.service';
+import { SearchBookService } from './services/searchBook.service';
 
 @Component({
   selector: 'assignment-one',
@@ -8,9 +8,9 @@ import { AssignmentOneFacadeService } from './facades/facade.service';
 })
 export class AssignmentOneComponent {
 
-  constructor(private facadeService: AssignmentOneFacadeService) { }
+  constructor(private searchBookService: SearchBookService) { }
 
   searchBookByTitle(title: string) {
-    this.facadeService.searchBookByTitle(title);
+    this.searchBookService.search(title);
   }
 }
