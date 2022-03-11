@@ -14,7 +14,7 @@ export class AccountBalanceComponent implements OnInit {
   // in transactions.service.ts
   balance: number = 1000;
 
-  // Injects the TransactionService into this component 
+  // Injects the TransactionService into this component
   // so that we can use its functionality
   constructor(private transactionService: TransactionService) { }
 
@@ -24,7 +24,6 @@ export class AccountBalanceComponent implements OnInit {
   ngOnInit(): void {
     this.transactionService.purchases$.subscribe((value) => {
       // This is a shorthand way of saying:
-      // this.balance = this.balance - value;
       this.balance-= value;
     });
   }

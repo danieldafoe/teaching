@@ -1,0 +1,47 @@
+
+<!--
+  This part of the web page will only show
+  when the `books$` variable has a value.
+  Otherwise, it will display the `<ng-template>` below
+  with the template variable `#loading` on it.
+
+  `*ngIf` is an Angular directive used to only show HTML
+  if a certain condition is true. In this case, we only show
+  this section once the `books$` variable gets a value back from
+  the API call we make to the OpenLibrary API.
+-->
+<ng-container *ngIf="(books$ | async) as books; else loading">
+  <h3>
+    Books
+  </h3>
+
+  <!--
+    Uncomment the paragraph element below and search for a book
+    in order to see the full JSON data that comes back from the request
+    we make to the OpenLibrary API.
+  -->
+  <!-- <p>
+    {{ books | json }}
+  </p> -->
+
+  <ul>
+    <!--
+      This will loop over all the books$.docs
+      since it's an array. Every time it gets
+      a new value from the array, it will be put
+      into the "book" variable. Then we can use book.key
+      and book.title for each individual book in books$.docs .
+    -->
+    <li *ngFor="let book of books.docs">
+      <a href="https://openlibrary.org{{ book.key }}" target="_blank">
+        {{ book.title }}
+      </a>
+    </li>
+  </ul>
+</ng-container>
+
+<ng-template #loading>
+  <p *ngIf="areResultsLoading">
+    Loading results...
+  </p>
+</ng-template>
