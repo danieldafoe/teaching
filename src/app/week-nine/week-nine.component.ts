@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState, selfDestruct } from '../store';
+import { AppState } from '../store';
+import { selfDestruct } from '../store/actions';
 
 @Component({
   selector: 'week-nine',

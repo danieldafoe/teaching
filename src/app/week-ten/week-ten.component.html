@@ -1,0 +1,13 @@
+<p *ngIf="(hasStoredItem$ | async) === true">
+  Hey, looks like you've stored some stuff before. :)
+</p>
+
+<label>
+  Value:
+  <input #item type="text" />
+</label>
+<div class="actions">
+  <button type="button" (click)="storeData(item.value)">
+    Store Data
+  </button>
+</div>

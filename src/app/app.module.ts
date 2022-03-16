@@ -30,6 +30,10 @@ import { StoreModule } from '@ngrx/store';
 import { appReducer } from './store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { AssignmentTwoComponent } from './assignment-two/assignment-two.component';
+import { WeekTenComponent } from './week-ten/week-ten.component';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDataEffects } from './store/effects/storage.effects';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,9 @@ import { environment } from '../environments/environment';
     WeekSixComponent,
     WeekSevenComponent,
     LabTwoComponent,
-    WeekNineComponent
+    WeekNineComponent,
+    AssignmentTwoComponent,
+    WeekTenComponent
   ],
   imports: [
     AppRoutingModule,
@@ -65,6 +71,8 @@ import { environment } from '../environments/environment';
     // handle all changes to the Store.
     StoreModule.forRoot({ desn3037: appReducer }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    //
+    EffectsModule.forRoot([StoreDataEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent]
