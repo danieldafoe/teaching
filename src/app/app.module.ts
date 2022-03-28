@@ -34,6 +34,8 @@ import { AssignmentTwoComponent } from './assignment-two/assignment-two.componen
 import { WeekTenComponent } from './week-ten/week-ten.component';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDataEffects } from './store/effects/storage.effects';
+import { WeekElevenComponent } from './week-eleven/week-eleven.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { StoreDataEffects } from './store/effects/storage.effects';
     LabTwoComponent,
     WeekNineComponent,
     AssignmentTwoComponent,
-    WeekTenComponent
+    WeekTenComponent,
+    WeekElevenComponent
   ],
   imports: [
     AppRoutingModule,
@@ -73,6 +76,7 @@ import { StoreDataEffects } from './store/effects/storage.effects';
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     //
     EffectsModule.forRoot([StoreDataEffects]),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

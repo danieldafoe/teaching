@@ -1,0 +1,43 @@
+<form [formGroup]="signupForm">
+  <h2>
+    User Information
+  </h2>
+
+  <div>
+    <label>
+      <p>First Name</p>
+      <input formControlName="firstName" type="text" />
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <p>Last Name</p>
+      <input formControlName="lastName" type="text" />
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <p>Age</p>
+      <input formControlName="age" type="text" />
+    </label>
+  </div>
+
+  <button type="button" (click)="updateName('Wayne')">
+    Update Model MVC
+  </button>
+</form>
+
+<h3>
+  Current Information
+</h3>
+<p>
+  First Name: {{ signupForm.get('firstName')?.value }}
+</p>
+<p>
+  Last Name: {{ signupForm.get('lastName')?.value }}
+</p>
+<p>
+  Age: {{ signupForm.get('age')?.value }}
+</p>
