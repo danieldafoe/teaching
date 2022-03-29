@@ -1,0 +1,25 @@
+<h2>
+  Lab 3
+</h2>
+
+<form [formGroup]="taxForm">
+  <label>
+    Amount
+    <input #amount formControlName="amount" type="text" />
+  </label>
+
+  <label class="mt-2">
+    Tax
+    <input #taxAmount formControlName="taxAmount" type="text" />
+  </label>
+
+  <div class="mt-2">
+    <button (click)="calculateTotal(amount.value, taxAmount.value)" type="button">
+      Calculate Tax
+    </button>
+  </div>
+</form>
+
+<p *ngIf="totalWithTax > 0">
+  Total: {{ totalWithTax | currency }}
+</p>

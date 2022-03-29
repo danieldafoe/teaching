@@ -16,6 +16,7 @@ import { AssignmentTwoComponent } from './assignment-two/assignment-two.componen
 import { WeekTenComponent } from './week-ten/week-ten.component';
 import { WeekElevenComponent } from './week-eleven/week-eleven.component';
 import { WeekTwelveComponent } from './week-twelve/week-twelve.component';
+import { LabThreeComponent } from './lab-three/lab-three.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: WeekTwelveComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'assignment-two', component: AssignmentTwoComponent },
   { path: 'lab-one', component: LabOneComponent },
   { path: 'lab-two', component: LabTwoComponent },
+  { path: 'lab-three', component: LabThreeComponent },
   { path: 'week-two', component: WeekTwoComponent },
   { path: 'week-three', component: WeekThreeComponent },
   { path: 'week-three-page-two', component: WeekThreePageTwoComponent },
