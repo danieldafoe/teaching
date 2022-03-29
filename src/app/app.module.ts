@@ -36,6 +36,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDataEffects } from './store/effects/storage.effects';
 import { WeekElevenComponent } from './week-eleven/week-eleven.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WeekTwelveComponent } from './week-twelve/week-twelve.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     WeekNineComponent,
     AssignmentTwoComponent,
     WeekTenComponent,
-    WeekElevenComponent
+    WeekElevenComponent,
+    WeekTwelveComponent
   ],
   imports: [
     AppRoutingModule,

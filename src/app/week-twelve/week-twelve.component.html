@@ -1,0 +1,16 @@
+<h2>
+  Week 12
+</h2>
+
+<select [formControl]="selectedPokemon" *ngIf="pokemon" (change)="changePokemon()">
+  <option *ngFor="let poke of pokemon">
+    {{ poke.name }}
+  </option>
+</select>
+
+<ng-container *ngIf="pokemonData">
+  <h3>
+    {{ pokemonData.name | uppercase }}
+    <img [src]="pokemonData.sprites.front_default" [alt]="pokemonData.name" aria-hidden='true' />
+  </h3>
+</ng-container>
