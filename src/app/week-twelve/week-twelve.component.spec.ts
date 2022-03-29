@@ -1,6 +1,6 @@
 import { WeekTwelveComponent } from './week-twelve.component';
 
-fdescribe('WeekTwelveComponent', () => {
+describe('WeekTwelveComponent', () => {
   let component: WeekTwelveComponent;
   let mockHttpClient = jasmine.createSpyObj('HttpClient', ['get']);
   let mockFormBuilder = jasmine.createSpyObj('FormBuilder', ['control']);

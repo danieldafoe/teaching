@@ -46,9 +46,13 @@ export class WeekTwelveComponent implements OnInit {
 
   getIdFromPokemon(pokemonName: string): string {
     const matchingPokemon = this.pokemon.find(
-      (pokemon) => pokemon.name === pokemonName);
-    const splitUrl = matchingPokemon.url.split('/');
+      (pokemon) =>
+        (pokemon.name).toLowerCase() === pokemonName.toLowerCase());
 
-    return splitUrl[splitUrl.length - 2];
+    if (matchingPokemon) {
+      const splitUrl = matchingPokemon.url.split('/');
+      return splitUrl[splitUrl.length - 2];
+    }
+    return '';
   }
 }
