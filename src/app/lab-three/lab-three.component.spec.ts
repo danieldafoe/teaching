@@ -1,5 +1,5 @@
-import { LabThreeComponent } from './lab-three.component';
+// import { LabThreeComponent } from './lab-three.component';
 
-describe('LabThreeComponent', () => {
-  
-});
+// describe('LabThreeComponent', () => {
+
+// });

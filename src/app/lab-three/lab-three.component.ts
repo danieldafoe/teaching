@@ -29,8 +29,7 @@ export class LabThreeComponent implements OnInit {
   // amount of tax to charge. The second parameter has a default value
   // of 1.13 from the TAX constant. (Line 5)
   calculateTotal(amount: string, taxAmount: string = TAX): void {
-    this.totalWithTax =
-      this.convertToFloat(amount) * this.convertToFloat(taxAmount);
+    this.totalWithTax = this.convertToFloat(amount) * this.convertToFloat(taxAmount);
   }
 
   // A simple function for converting a string number to a
