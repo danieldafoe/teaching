@@ -1,0 +1,1 @@
+export const OPEN_LIBRARY_BASE_PATH = 'https://openlibrary.org/';

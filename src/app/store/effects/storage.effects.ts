@@ -15,7 +15,7 @@ export class StoreDataEffects {
     // stream of actions and execute some logic.
     tap((action: any) => {
       const ls = window.localStorage;
-      ls.setItem('desn3037', action.value);
+      ls.setItem('Book_Store', action.value);
     }),
   ),
   // This removes the requirement to dispatch

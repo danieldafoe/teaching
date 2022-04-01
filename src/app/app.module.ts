@@ -72,7 +72,7 @@ import { StoreDataEffects } from './store/effects/storage.effects';
     StoreModule.forRoot({ desn3037: appReducer }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     //
-    EffectsModule.forRoot([StoreDataEffects]),
+    EffectsModule.forRoot([StoreDataEffects, ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
