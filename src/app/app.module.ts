@@ -16,6 +16,7 @@ import { AccountBalanceComponent } from './week-four/account-balance/account-bal
 import { AccountDetailsComponent } from './week-four/account-details/account-details.component';
 import { WeekFiveComponent } from './week-five/week-five.component';
 import { AssignmentOneComponent } from './assignment-one/assignment-one.component';
+import { SearchResultComponent } from './assignment-one/search-result/search-result.component';
 import { WeekSixComponent } from './week-six/week-six.component';
 import { WeekSevenComponent } from './week-seven/week-seven.component';
 import { LabTwoComponent } from './lab-two/lab-two.component';
@@ -49,6 +50,7 @@ import { StoreDataEffects } from './store/effects/storage.effects';
     AccountDetailsComponent,
     WeekFiveComponent,
     AssignmentOneComponent,
+    SearchResultComponent,
     WeekSixComponent,
     WeekSevenComponent,
     LabTwoComponent,
