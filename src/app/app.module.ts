@@ -35,6 +35,7 @@ import { AssignmentTwoComponent } from './assignment-two/assignment-two.componen
 import { WeekTenComponent } from './week-ten/week-ten.component';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDataEffects } from './store/effects/storage.effects';
+import { hasSearchBooksReducer } from './store/reducers/index.reducer';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,10 @@ import { StoreDataEffects } from './store/effects/storage.effects';
     // The forRoot() method accepts an object that gives a name
     // for the root Store and then the main reducer that will
     // handle all changes to the Store.
-    StoreModule.forRoot({ desn3037: appReducer }),
+    StoreModule.forRoot({
+      desn3037: appReducer,
+      hasSearchBooks: hasSearchBooksReducer
+     }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     //
     EffectsModule.forRoot([StoreDataEffects]),

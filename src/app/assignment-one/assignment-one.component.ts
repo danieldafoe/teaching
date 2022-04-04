@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { searchBooks } from '../store/actions';
+import { hasSearchBooks } from '../store/selectors';
 import { SearchBookService } from './services/searchBook.service';
 
 @Component({
@@ -8,9 +11,15 @@ import { SearchBookService } from './services/searchBook.service';
 })
 export class AssignmentOneComponent {
 
-  constructor(private searchBookService: SearchBookService) { }
+  hasSearchBooks$ = this.store.select(hasSearchBooks);
+
+  constructor(
+    private searchBookService: SearchBookService,
+    private store: Store
+  ) { }
 
   searchBookByTitle(title: string) {
+    this.store.dispatch(searchBooks(title));
     this.searchBookService.search(title);
   }
 }

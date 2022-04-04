@@ -1,4 +1,4 @@
-import { createSelector } from "@ngrx/store";
+import { createFeatureSelector, createSelector } from "@ngrx/store";
 import { AppState } from "..";
 
 // Selectors
@@ -15,3 +15,6 @@ export const selectSelfDestructStatus = createSelector(
 export const selectHasStoredItem = createSelector(
   selectAppState,
   (state: AppState) => state.hasStoredItem);
+
+
+  export const hasSearchBooks = createFeatureSelector<Readonly<Boolean>>('hasSearchBooks');

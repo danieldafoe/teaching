@@ -2,6 +2,13 @@
   Assignment 1
 </h2>
 
+<ng-container *ngIf="hasSearchBooks$ | async as hasSearchBooks; else notSearch">
+  <h1>{{ hasSearchBooks ? 'SEARCHED' : ''}}</h1>
+</ng-container>
+<ng-template #notSearch>
+  <h1>NOT YET :P</h1>
+</ng-template>
+
 <div>
   <h3>
     <label for="book-title">

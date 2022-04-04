@@ -12,6 +12,11 @@ export const storeData = createAction(
   props<LocalStorageData>()
 );
 
+export const searchBooks = createAction(
+  '[Search Book] store to local storage "HAS_SEARCH_BOOKS"',
+  props<any>()
+);
+
 // Create a type to use for when we pass data
 // to save with the storeData Action.
 export interface LocalStorageData {
