@@ -17,6 +17,7 @@ import { WeekTenComponent } from './week-ten/week-ten.component';
 import { WeekElevenComponent } from './week-eleven/week-eleven.component';
 import { WeekTwelveComponent } from './week-twelve/week-twelve.component';
 import { LabThreeComponent } from './lab-three/lab-three.component';
+import { WeekThirteenComponent } from './week-thirteen/week-thirteen.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: WeekTwelveComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'week-ten', component: WeekTenComponent },
   { path: 'week-eleven', component: WeekElevenComponent },
   { path: 'week-twelve', component: WeekTwelveComponent },
+  { path: 'week-thirteen', component: WeekThirteenComponent },
 ];
 
 @NgModule({

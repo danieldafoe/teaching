@@ -38,6 +38,7 @@ import { WeekElevenComponent } from './week-eleven/week-eleven.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WeekTwelveComponent } from './week-twelve/week-twelve.component';
 import { LabThreeComponent } from './lab-three/lab-three.component';
+import { WeekThirteenComponent } from './week-thirteen/week-thirteen.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { LabThreeComponent } from './lab-three/lab-three.component';
     WeekTenComponent,
     WeekElevenComponent,
     WeekTwelveComponent,
-    LabThreeComponent
+    LabThreeComponent,
+    WeekThirteenComponent
   ],
   imports: [
     AppRoutingModule,

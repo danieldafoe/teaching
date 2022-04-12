@@ -1,0 +1,39 @@
+$inaccessible-text-colour: #8fc670;
+
+.fave-food-options {
+  label {
+    display: block;
+  }
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+h3,
+h4,
+.label {
+  color: $inaccessible-text-colour;
+}
+
+h4 {
+  margin-bottom: .5rem;
+}
+
+img {
+  height: auto;
+  max-width: 400px;
+}
+
+button {
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  min-width: 0;
+  width: auto;
+
+  img {
+    max-width: 120px;
+  }
+}

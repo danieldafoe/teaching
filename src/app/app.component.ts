@@ -22,5 +22,6 @@ export class AppComponent {
     { name: 'Week 10', url: 'week-ten' },
     { name: 'Week 11', url: 'week-eleven' },
     { name: 'Week 12', url: 'week-twelve' },
+    { name: 'Week 13', url: 'week-thirteen' },
   ];
 }
